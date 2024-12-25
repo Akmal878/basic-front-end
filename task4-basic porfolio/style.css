@@ -4,11 +4,17 @@
 }
 body,html{
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: "Saira Condensed", serif;
+    background-color: #151515;
+    overflow-x: hidden;
+
 }
 .cont{
     background-color: #151515;
     height: 100vh;
+    position: relative;
+
+
 }
 .shape{
     position: absolute;
@@ -120,9 +126,7 @@ body,html{
     padding-top: 100px;
     font-family: "Saira Condensed", serif;
     font-size: 20px;
-
-    
-    
+    height: 90vh   
 }
 .hero h1{
   font-weight: 500;
@@ -145,3 +149,53 @@ body,html{
      border-bottom: 3px solid #52de9f;
      cursor: pointer;
 }
+
+
+
+.grid{
+    margin-top: 90px;
+    display: grid;
+    /* background-color: #52de9f; */
+    grid-template: 150px 150px /auto auto auto;
+
+
+}
+
+.items{
+
+    /* background-color: pink;
+    border: 2px solid green; */
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 5px; */
+    justify-content: center;
+    color: #fff;
+    line-height: 60px;
+    
+}
+.items>h1{
+    letter-spacing: 3px;
+    font-size: 60px;
+}
+.items>p{
+    
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+
+.reuse1{
+
+    width: 540px;
+    height: 100px;
+    position: absolute;
+   
+    right: -200px;
+    bottom: -65%;
+    opacity: 0.3;
+    z-index: 15;
+}
+
